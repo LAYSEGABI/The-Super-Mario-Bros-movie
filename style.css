@@ -1,0 +1,60 @@
+@import url('styles/header.css');
+@import url('styles/conteudo.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #EDF1F7;
+    --red: #C51212;
+    --blue: #0041C2;
+    --green: #14B02D;
+    --yellow: #ffc12b;
+}
+
+body,
+button,
+a {
+    color: var(--text);
+    font: 400 1rem "Mukta", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+main {
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    height: 100vh;
+    width: 100%;
+    z-index: 11;
+}
+
+#background {
+    position: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    width: 100vw;
+    
+    z-index: -1;
+}
+
+#background video {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}

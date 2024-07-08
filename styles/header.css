@@ -1,0 +1,123 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 3em;
+}
+
+.header-conteudo {
+    display: flex;
+    gap: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    font-weight: 100;
+    font-size: .9em;
+    letter-spacing: 3px;
+    transition: .5s;
+}
+
+nav a:hover {
+    letter-spacing: 5px;
+}
+
+#HOME:hover {
+    color: var(--blue);
+}
+
+#STORY:hover {
+    color: var(--green);
+}
+
+#WALLPAPERS:hover {
+    color: var(--red);
+}
+
+#TRAILER:hover {
+    color: var(--yellow);
+}
+
+
+
+.logo {
+    width: 5em;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 30px;
+}
+
+.redes-sociais svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    transition: .5s;
+}
+
+.redes-sociais svg:hover {
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+
+@media (max-width: 900px) {
+
+    nav {
+        gap: 20px;
+    }
+
+    nav a {
+        letter-spacing: 1px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    header {
+        flex-direction: column;
+        padding-bottom: 5em;
+    }
+
+    .header-conteudo {
+        display: flex;
+        gap: 25px;
+        margin-bottom: 1em;
+    }
+
+    .logo {
+        width: 3em;
+    }
+
+    nav a:hover {
+        letter-spacing: 2px;
+    }
+
+}
+
+
+
+@media (max-width: 350px) {
+
+    .header-conteudo {
+        gap: 10px;
+    }
+
+   nav {
+    gap: 10px;
+   }
+
+   .descricao p {
+    font-size: .8em;
+   }
+
+}
